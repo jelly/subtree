@@ -3,7 +3,7 @@
 
 pkgname=parted
 pkgver=1.8.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A program for creating, destroying, resizing, checking and copying partitions"
 arch=(i686 x86_64)
 license=('GPL3')
@@ -20,4 +20,5 @@ build() {
   ./configure --prefix=/usr --disable-debug --disable-Werror
   make || return 1
   make DESTDIR=$startdir/pkg install
+  rm $pkgdir/usr/share/info/dir
 }
