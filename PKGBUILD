@@ -1,5 +1,5 @@
-# Maintainer: Aaron Griffin <aaron@archlinux.org>
-# Contributor: Giovanni Scafora <giovanni@archlinux.org>
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=parted
 pkgver=2.1
