@@ -3,7 +3,7 @@
 
 pkgname=parted
 pkgver=3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A program for creating, destroying, resizing, checking and copying partitions"
 arch=('i686' 'x86_64')
 license=('GPL3')
@@ -19,6 +19,7 @@ build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
   ./configure --prefix=/usr \
+              --sbindir=/usr/bin \
               --disable-debug \
               --disable-rpath
   make
