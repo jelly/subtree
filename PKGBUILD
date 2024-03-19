@@ -12,7 +12,7 @@ license=('MIT')
 depends=('python-psutil' 'python-mypy_extensions' 'python-typing_extensions'
 'python-tomli')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
-checkdepends=('python-pytest' 'python-six' 'python-attrs' 'python-pytest-xdist')
+checkdepends=('python-pytest' 'python-attrs' 'python-pytest-xdist')
 optdepends=(
   'python-lxml: for reports'
   'python-pip: for installing missing types'
