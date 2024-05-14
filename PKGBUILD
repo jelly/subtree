@@ -9,12 +9,14 @@ pkgdesc='Optional static typing for Python 2 and 3 (PEP484)'
 url="http://www.mypy-lang.org/"
 arch=('any')
 license=('MIT')
-depends=('python-psutil' 'python-mypy_extensions' 'python-typing_extensions')
+depends=('python' 'python-mypy_extensions' 'python-typing_extensions')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
-checkdepends=('python-pytest' 'python-attrs' 'python-pytest-xdist')
+checkdepends=('python-attrs' 'python-psutil' 'python-pytest' 'python-pytest-xdist')
 optdepends=(
   'python-lxml: for reports'
   'python-pip: for installing missing types'
+  'python-psutil: for dmypy'
+  'python-setuptools: for mypyc'
 )
 source=("$pkgname-$pkgver.tar.gz::https://github.com/python/mypy/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('5550f427e9492de27e734ed182f9418f41bc632863b47470c6aab56420a0e661')
