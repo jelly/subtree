@@ -16,8 +16,8 @@ optdepends=(
   'python-lxml: for reports'
   'python-pip: for installing missing types'
 )
-source=("$pkgname-$pkgver.tar.gz::https://pypi.org/packages/source/m/$pkgname/$pkgname-$pkgver.tar.gz")
-sha256sums=('3d087fcbec056c4ee34974da493a826ce316947485cef3901f511848e687c131')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/python/mypy/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('5550f427e9492de27e734ed182f9418f41bc632863b47470c6aab56420a0e661')
 
 prepare() {
     cd "$pkgname-$pkgver"
