@@ -15,7 +15,6 @@ pkgbase = mypy
 	depends = python-psutil
 	depends = python-mypy_extensions
 	depends = python-typing_extensions
-	depends = python-tomli
 	optdepends = python-lxml: for reports
 	optdepends = python-pip: for installing missing types
 	source = mypy-1.10.0.tar.gz::https://pypi.org/packages/source/m/mypy/mypy-1.10.0.tar.gz

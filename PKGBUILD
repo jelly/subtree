@@ -9,8 +9,7 @@ pkgdesc='Optional static typing for Python 2 and 3 (PEP484)'
 url="http://www.mypy-lang.org/"
 arch=('any')
 license=('MIT')
-depends=('python-psutil' 'python-mypy_extensions' 'python-typing_extensions'
-'python-tomli')
+depends=('python-psutil' 'python-mypy_extensions' 'python-typing_extensions')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 checkdepends=('python-pytest' 'python-attrs' 'python-pytest-xdist')
 optdepends=(
